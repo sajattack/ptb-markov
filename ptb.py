@@ -9,5 +9,7 @@ text_model = markovify.NewlineText(text)
 
 # Print five randomly-generated sentences
 for i in range(20):
-    print(text_model.make_sentence())
+    sentence = text_model.make_sentence()
+    if sentence != None:
+        print(sentence)
 
